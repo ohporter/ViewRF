@@ -7,15 +7,15 @@
 QT       += core gui
 
 # Comment this out to build on x86 or other !NEON platforms
-CONFIG   += neon
+#CONFIG   += neon
 
-include (/opt/qwt-6.1.0/features/qwt.prf)
+include (/usr/local/qwt-6.1.0-svn/features/qwt.prf)
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = ViewRF
     target.files = ViewRF
-    target.path = /home/root
+    target.path = /usr/local/bin
 
 INSTALLS += target
 
